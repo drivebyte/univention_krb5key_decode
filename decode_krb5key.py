@@ -30,7 +30,7 @@ def extract_NThash_from_krb5key(ucs_krb5key):
 
 def main():
     parser = argparse.ArgumentParser(
-            prog='ProgramName',
+            prog='decode_krb5key.py',
                     description='Simple tool to extract ntlm hash out of the arcfour_hmac_md5 krb5key used by univention ucs')
     parser.add_argument('-d', help="put your base64 encoded krb5key value here", required=True)
     args = parser.parse_args()
